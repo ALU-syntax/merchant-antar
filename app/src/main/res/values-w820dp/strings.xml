@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Merchant BUMdesKu </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCiWtYdtXeZALg4FM9bP2dysxDaptNpGr8</string>
+    <string name="loginplaystore">821651748354835</string>
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="introtext1">Daftar!</string>
+    <string name="introdesc1">Promosikan produk kamu bersama M-ojek partner</string>
+    <string name="introtext2">Fitur Yang Mudah</string>
+    <string name="introdesc2">Seluruh orderan terdata rapih</string>
+    <string name="introtext3">Delivery Order</string>
+    <string name="introdesc3">Produk anda akan dikirim oleh team driver berpengalaman!</string>
+
+    <string name="exit">Apa kamu yakin ingin keluar aplikasi??</string>
+    <string name="yes">Ya!</string>
+    <string name="no">Tidak</string>
+
+    <string name="email">Email</string>
+    <string name="verifydesc">Kami mengirim kode verfifikasi</string>
+    <string name="norecieve">Tidak mendapatkan kode?</string>
+    <string name="resend">Kirim ulang</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="privacy">Dengan masuk anda menyetujui <![CDATA[<b><font color=#6DC0FF>Syarat kebijakan kami</font></b>]]></string>
+
+    <string name="lupa">Lupa Password?</string>
+    <string name="button_signIn">Login</string>
+    <string name="button_signUp">Daftar</string>
+    <string name="button_dontHaveAccount">Sudah punya akun? </string>
+    <string name="wrongnumber">Format nomor salah</string>
+    <string name="phoneemailwrong">No hp atau password salah!</string>
+    <string name="phonepass">No hp dan password tidak boleh kosong!</string>
+    <string name="phoneempty">No hp tidak boleh kosong!</string>
+    <string name="passempty">Password tidak boleh kosong!</string>
+    <string name="emailempty">Email tidak boleh kosong!</string>
+
+    <string name="hint_name">Nama</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">85370xxxxxx</string>
+    <string name="hint_birthday">Tanggal lahir</string>
+    <string name="hint_password">Password</string>
+
+    <string name="menu_store">Toko</string>
+    <string name="menu_menu">Menu</string>
+    <string name="menu_history">Riwayat</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_settings">Pengaturan</string>
+    <string name="text_cancel">Batal</string>
+    <string name="getstarted">Mulai</string>
+
+
+    <string name="add_image">Tambah gambar</string>
+    <string name="add_menu">Tambah menu</string>
+    <string name="name">Nama</string>
+    <string name="description">Deskripsi</string>
+    <string name="price_standard">Harga standar</string>
+    <string name="price_promo">Harga promo</string>
+    <string name="save">Simpan</string>
+    <string name="old_password">Password lama</string>
+    <string name="new_password">Password baru</string>
+    <string name="typing">Sedang menulis....</string>
+    <string name="send_message">Kirim pesan ini</string>
+
+    <string name="button_signup">Daftar</string>
+
+    <string name="card_step1">xxxx-xxxx-xxxx-xxxx</string>
+    <string name="card_step2">XXXXX XXXXXX</string>
+    <string name="holder_name">Nama Pemilik</string>
+    <string name="expired">Kadaluarsa</string>
+    <string name="month_expired">MM/YY</string>
+    <string name="card_number">Nomor Kartu</string>
+    <string name="card_cvc">CVC</string>
+    <string name="submit">Kirim</string>
+    <string name="back">Kembali</string>
+
+
+    <string name="edit_profil">Ubah profil</string>
+    <string name="personal_profil">Data diri</string>
+    <string name="code_id">+62</string>
+    <string name="add_address">Tambah alamat</string>
+    <string name="sim_ktp">SIM/KTP</string>
+    <string name="nomor_nik">Nomor nik/sim</string>
+
+    <string name="edit_shop">Ubah lapak</string>
+    <string name="edit_logo">Ganti logo</string>
+    <string name="merchant">Merchant</string>
+    <string name="merchant_name">Nama merchant</string>
+    <string name="location">Lokasi</string>
+    <string name="scedule">Jadwal buka</string>
+    <string name="open">Buka</string>
+    <string name="close">Tutup</string>
+
+    <string name="ride_location">Lokasi</string>
+    <string name="ride_destination">Tujuan</string>
+    <string name="ride_note">Catatan</string>
+
+    <string name="ride_setPickUp">Set Jemput</string>
+    <string name="ride_setDestination">Set Tujuan</string>
+    <string name="text_order">Order</string>
+    <string name="waiting_pleaseWait">Mohon tunggu....</string>
+    <string name="text_noInternet">Tidak ada akses internet</string>
+
+    <string name="notification_cancel">Order dibatalkan</string>
+    <string name="notification_start">Mulai ke tujuan</string>
+    <string name="notification_accept">Jemput penumpang</string>
+    <string name="notification_finish">Order selesai</string>
+    <string name="waiting_desc">Tunggu</string>
+
+    <string name="text_with_bullet">\u2022</string>
+
+    <string-array name="list_maximum">
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>50000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string-array name="gendertype">
+        <item>Jenis Kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="jobtype">
+        <item>Select Job</item>
+        <item>Ride</item>
+        <item>Car</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload_photo_ktp_sim">Upload photo ktp/sim</string>
+    <string name="detail_merchant">Detail Merchant</string>
+    <string name="upload_logo">Upload Logo</string>
+    <string name="tipe_merchant">Tipe Merchant</string>
+    <string name="nama_lapak">Nama Lapak</string>
+    <string name="tipe">Tipe</string>
+    <string name="privacy_policy">Dengan login anda telah menyetujui syarat dan ketentuan yang berlaku</string>
+    <string name="merchant_partner">Merchant Partner</string>
+    <string name="enable_location">Izinkan Lokasi</string>
+    <string name="trems_condition">Untuk menggunakan aplikasi mohon izinkan lokasi dan aktifkan maps</string>
+
+</resources>
