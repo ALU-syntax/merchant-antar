@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gotammerchant.iml" filepath="$PROJECT_DIR$/.idea/modules/gotammerchant.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/gotammerchant.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/merchant-antar.iml" filepath="$PROJECT_DIR$/.idea/modules/merchant-antar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/merchant-antar.app.unitTest.iml" />
     </modules>
   </component>
 </project>

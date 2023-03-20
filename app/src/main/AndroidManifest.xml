@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.bumdesku.merchant"
+    package="com.antar.merchant"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -18,7 +18,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:name="com.bumdesku.merchant.constants.BaseApp"
+        android:name="com.antar.merchant.constants.BaseApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
@@ -26,14 +26,14 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:replace="android:supportsRtl">
-        <activity android:name="com.bumdesku.merchant.activity.EditstoreActivity"
+        <activity android:name="com.antar.merchant.activity.EditstoreActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.bumdesku.merchant.activity.AddmenuActivity"
+        <activity android:name="com.antar.merchant.activity.AddmenuActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.bumdesku.merchant.activity.OrdervalidasiActivity"
+        <activity android:name="com.antar.merchant.activity.OrdervalidasiActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bumdesku.merchant.activity.SplashActivity"
+            android:name="com.antar.merchant.activity.SplashActivity"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
@@ -43,99 +43,99 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="com.bumdesku.merchant.utils.api.service.MessagingService">
+        <service android:name="com.antar.merchant.utils.api.service.MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name="com.bumdesku.merchant.activity.IntroActivity"
+            android:name="com.antar.merchant.activity.IntroActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.bumdesku.merchant.activity.PicklocationActivity"
+            android:name="com.antar.merchant.activity.PicklocationActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bumdesku.merchant.activity.ChatActivity"
+            android:name="com.antar.merchant.activity.ChatActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.TopupSaldoActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-
-        <activity
-            android:name="com.bumdesku.merchant.activity.EditmitraActivity"
+            android:name="com.antar.merchant.activity.TopupSaldoActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
 
         <activity
-            android:name="com.bumdesku.merchant.activity.ChangepassActivity"
+            android:name="com.antar.merchant.activity.EditmitraActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.antar.merchant.activity.ChangepassActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.WithdrawActivity"
+            android:name="com.antar.merchant.activity.WithdrawActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.WalletActivity"
+            android:name="com.antar.merchant.activity.WalletActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.TopUpPulsaActivity"
+            android:name="com.antar.merchant.activity.TopUpPulsaActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.TopUpBpjsActivity"
+            android:name="com.antar.merchant.activity.TopUpBpjsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.TopUpPlnActivity"
+            android:name="com.antar.merchant.activity.TopUpPlnActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.OperatorProviderListActivity"
+            android:name="com.antar.merchant.activity.OperatorProviderListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.PpobActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-
-        <activity
-            android:name="com.bumdesku.merchant.activity.WaActivity"
+            android:name="com.antar.merchant.activity.PpobActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
 
         <activity
-            android:name="com.bumdesku.merchant.activity.PrivacyActivity"
+            android:name="com.antar.merchant.activity.WaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.antar.merchant.activity.PrivacyActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name="com.bumdesku.merchant.activity.MenuActivity"
+            android:name="com.antar.merchant.activity.MenuActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bumdesku.merchant.activity.EditmenuActivity"
+            android:name="com.antar.merchant.activity.EditmenuActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bumdesku.merchant.activity.RegisterActivity"
+            android:name="com.antar.merchant.activity.RegisterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name="com.bumdesku.merchant.activity.LoginActivity"
+            android:name="com.antar.merchant.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.LupapassActivity"
+            android:name="com.antar.merchant.activity.LupapassActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name="com.bumdesku.merchant.activity.MainActivity"
+            android:name="com.antar.merchant.activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
@@ -164,7 +164,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.bumdesku.merchant.fileprovider"
+            android:authorities="com.antar.merchant.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
