@@ -32,7 +32,7 @@
             <customfonts.TextViewSFProDisplayRegular
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="MERCHANT BUMdesKu"
+                android:text="MERCHANT Antar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

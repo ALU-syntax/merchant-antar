@@ -1,10 +1,12 @@
 package com.antar.merchant.activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.antar.merchant.utils.LocaleHelper;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.antar.merchant.R;
 import com.antar.merchant.constants.BaseApp;
@@ -30,6 +32,11 @@ public class WalletActivity extends AppCompatActivity {
     RecyclerView recycle;
     WalletItem walletItem;
     RelativeLayout rlnodata;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

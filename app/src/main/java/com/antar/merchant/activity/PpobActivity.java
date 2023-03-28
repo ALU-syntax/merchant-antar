@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.antar.merchant.R;
+import com.antar.merchant.utils.LocaleHelper;
 
 
 public class PpobActivity extends AppCompatActivity {
@@ -21,6 +22,11 @@ public class PpobActivity extends AppCompatActivity {
     ImageView backbtn, images;
     RelativeLayout rlnotif, rlprogress;
     String disableback;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

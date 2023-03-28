@@ -1,6 +1,7 @@
 package com.antar.merchant.activity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -34,6 +35,7 @@ import com.antar.merchant.json.TopUpRequestResponse;
 import com.antar.merchant.json.fcm.FCMMessage;
 import com.antar.merchant.models.Notif;
 import com.antar.merchant.models.User;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.ProjectUtils;
 import com.antar.merchant.utils.SettingPreference;
 import com.antar.merchant.utils.Utility;
@@ -71,6 +73,11 @@ public class TopUpPlnActivity extends AppCompatActivity implements OnItemClicked
     List<TopUpRequestResponse> listOfPreviousPLNTopUpRequest= new ArrayList<>();
     List<MobileTopUpDetailResponseModel> dataList = new ArrayList<>();
     private String keyss;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

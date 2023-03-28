@@ -1,5 +1,6 @@
 package com.antar.merchant.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -22,6 +23,7 @@ import com.antar.merchant.json.WithdrawRequestJson;
 import com.antar.merchant.json.fcm.FCMMessage;
 import com.antar.merchant.models.Notif;
 import com.antar.merchant.models.User;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.SettingPreference;
 import com.antar.merchant.utils.Utility;
 import com.antar.merchant.utils.api.FCMHelper;
@@ -52,6 +54,11 @@ public class WithdrawActivity extends AppCompatActivity {
     LinearLayout llpentunjuk;
     BankItem bankItem;
     private String keyss;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

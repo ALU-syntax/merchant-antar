@@ -12,6 +12,7 @@ import retrofit2.Response;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -36,6 +37,7 @@ import com.antar.merchant.constants.Constants;
 import com.antar.merchant.json.AddEditItemRequestJson;
 import com.antar.merchant.json.ResponseJson;
 import com.antar.merchant.models.User;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.SettingPreference;
 import com.antar.merchant.utils.Utility;
 import com.antar.merchant.utils.api.ServiceGenerator;
@@ -58,6 +60,11 @@ public class AddmenuActivity extends AppCompatActivity {
     byte[] imageByteArray;
     Bitmap decoded;
     SettingPreference sp;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Merchant Antar </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCiWtYdtXeZALg4FM9bP2dysxDaptNpGr8</string>
+    <string name="loginplaystore">821651748354835</string>
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="introtext1">Register!</string>
+    <string name="introdesc1">Promote your product with Antar partners</string>
+    <string name="introtext2">Easy Features</string>
+    <string name="introdesc2">All orders are recorded neatly</string>
+    <string name="introtext3">Delivery Order</string>
+    <string name="introdesc3">Your product will be sent by a team of experienced drivers!</string>
+
+    <string name="exit">Are you sure you want to exit the application??</string>
+    <string name="yes">Yes!</string>
+    <string name="no">No</string>
+
+    <string name="email">Email</string>
+    <string name="verifydesc">We send a verification code</string>
+    <string name="norecieve">Didn\'t get the code?</string>
+    <string name="resend">Resend</string>
+    <string name="confirm">Cofirmation</string>
+    <string name="privacy">By entering you agree <![CDATA[<b><font color=#6DC0FF>Our policy terms</font></b>]]></string>
+
+    <string name="lupa">Forgot the password?</string>
+    <string name="button_signIn">Sign In</string>
+    <string name="button_signUp">Signup</string>
+    <string name="button_dontHaveAccount">Already have an account? </string>
+    <string name="wrongnumber">Incorrect number format</string>
+    <string name="phoneemailwrong">Incorrect phone number or password!</string>
+    <string name="phonepass">Number Phone and Password cannot be empty!</string>
+    <string name="phoneempty">Number Phone cannot be empty!</string>
+    <string name="passempty">Password cannot be empty!!</string>
+    <string name="emailempty">Email cannot be empty!!</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">85370xxxxxx</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_password">Password</string>
+
+    <string name="menu_store">Store</string>
+    <string name="menu_menu">Menu</string>
+    <string name="menu_history">History</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_settings">Settings</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="getstarted">Get Started</string>
+
+
+    <string name="add_image">Add Image</string>
+    <string name="add_menu">Add Menu</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="price_standard">Standard Price</string>
+    <string name="price_promo">Promo Price</string>
+    <string name="save">Save</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="typing">Typing....</string>
+    <string name="send_message">Send This Message</string>
+
+    <string name="button_signup">Signup</string>
+
+    <string name="card_step1">xxxx-xxxx-xxxx-xxxx</string>
+    <string name="card_step2">XXXXX XXXXXX</string>
+    <string name="holder_name">Holder Name</string>
+    <string name="expired">Expired</string>
+    <string name="month_expired">MM/YY</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_cvc">CVC</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+
+
+    <string name="edit_profil">Edit Profile</string>
+    <string name="personal_profil">Personal Profile</string>
+    <string name="code_id">+62</string>
+    <string name="add_address">Add Address</string>
+    <string name="sim_ktp">SIM/KTP</string>
+    <string name="nomor_nik">Number NIK/SIM</string>
+
+    <string name="edit_shop">Edit Shop</string>
+    <string name="edit_logo">Edit logo</string>
+    <string name="merchant">Merchant</string>
+    <string name="merchant_name">Name merchant</string>
+    <string name="location">Location</string>
+    <string name="scedule">Open Schedule</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="ride_location">Location</string>
+    <string name="ride_destination">Destination</string>
+    <string name="ride_note">Note</string>
+
+    <string name="ride_setPickUp">Set Pick Up</string>
+    <string name="ride_setDestination">Set Destination</string>
+    <string name="text_order">Order</string>
+    <string name="waiting_pleaseWait">Wait a moment....</string>
+    <string name="text_noInternet">No Internet Access</string>
+
+    <string name="notification_cancel">Order Canceled</string>
+    <string name="notification_start">Start to destination</string>
+    <string name="notification_accept">Pick up passengers</string>
+    <string name="notification_finish">Order Finish</string>
+    <string name="waiting_desc">Waiting</string>
+
+    <string name="text_with_bullet">\u2022</string>
+
+    <string-array name="list_maximum">
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>50000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string-array name="gendertype">
+        <item>Gender</item>
+        <item>Men</item>
+        <item>Woman</item>
+    </string-array>
+
+    <string-array name="jobtype">
+        <item>Select Job</item>
+        <item>Ride</item>
+        <item>Car</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload_photo_ktp_sim">Upload photo ktp/sim</string>
+    <string name="detail_merchant">Detail Merchant</string>
+    <string name="upload_logo">Upload Logo</string>
+    <string name="tipe_merchant">Type Merchant</string>
+    <string name="nama_lapak">Merchant Name</string>
+    <string name="tipe">Type</string>
+    <string name="privacy_policy">By logging in you have agreed to the terms and conditions that apply</string>
+    <string name="merchant_partner">Merchant Partner</string>
+    <string name="enable_location">Allow Location</string>
+    <string name="trems_condition">To use the application please allow location and enable maps</string>
+    <string name="choose_language">Choose Language</string>
+
+</resources>

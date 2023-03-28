@@ -2,6 +2,7 @@ package com.antar.merchant.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import com.antar.merchant.utils.LocaleHelper;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.antar.merchant.R;
 import com.antar.merchant.constants.BaseApp;
@@ -52,6 +54,11 @@ public class MenuActivity extends AppCompatActivity {
 
     MenusItem menuItem;
     List<ItemModel> itemmenu;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

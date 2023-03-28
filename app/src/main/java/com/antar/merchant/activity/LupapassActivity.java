@@ -1,5 +1,6 @@
 package com.antar.merchant.activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import com.antar.merchant.R;
 import com.antar.merchant.json.LoginRequestJson;
 import com.antar.merchant.json.LoginResponseJson;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.api.ServiceGenerator;
 import com.antar.merchant.utils.api.service.MerchantService;
 
@@ -33,6 +35,10 @@ public class LupapassActivity extends AppCompatActivity {
     RelativeLayout rlnotif, rlprogress;
     String disableback;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

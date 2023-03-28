@@ -7,6 +7,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ import com.antar.merchant.constants.BaseApp;
 import com.antar.merchant.json.EditProfileRequestJson;
 import com.antar.merchant.json.LoginResponseJson;
 import com.antar.merchant.models.User;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.api.ServiceGenerator;
 import com.antar.merchant.utils.api.service.MerchantService;
 import com.ybs.countrypicker.CountryPicker;
@@ -34,6 +36,12 @@ public class EditmitraActivity extends AppCompatActivity {
     TextView countrycode;
     String country_iso_code = "en";
     Button submit;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

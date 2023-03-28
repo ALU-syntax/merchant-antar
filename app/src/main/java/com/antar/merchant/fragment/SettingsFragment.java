@@ -53,6 +53,7 @@ public class SettingsFragment extends Fragment {
     private TextView merchantname, userid, namamitra, referal_code, salin_ref;
     private SettingPreference sp;
 
+    public static final String TAG = "bottom_sheet";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -74,6 +75,7 @@ public class SettingsFragment extends Fragment {
         LinearLayout rateapp = getView.findViewById(R.id.llrateapp);
         LinearLayout logout = getView.findViewById(R.id.lllogout);
         LinearLayout llpassword = getView.findViewById(R.id.llpassword);
+        LinearLayout llchangelanguage = getView.findViewById(R.id.llchangelanguage);
         sp = new SettingPreference(context);
 
         editmitra.setOnClickListener(new View.OnClickListener() {
@@ -143,6 +145,14 @@ public class SettingsFragment extends Fragment {
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             Uri.parse("http://play.google.com/store/apps/details?id=" + Objects.requireNonNull(getActivity()).getPackageName())));
                 }
+            }
+        });
+
+        llchangelanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BottomSheetFragment bottomSheetFragment = new BottomSheetFragment();
+                bottomSheetFragment.show(requireActivity().getSupportFragmentManager(), TAG);
             }
         });
 

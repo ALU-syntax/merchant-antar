@@ -1,5 +1,6 @@
 package com.antar.merchant.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -19,6 +20,7 @@ import com.antar.merchant.constants.Constants;
 import com.antar.merchant.item.TopUpItem;
 import com.antar.merchant.models.ayopulsa.PriceListDataModel;
 import com.antar.merchant.models.ayopulsa.PriceListDetailModel;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.SettingPreference;
 
 public class OperatorProviderListActivity extends AppCompatActivity implements TopUpItem.onTopUpItemClicked {
@@ -34,6 +36,11 @@ public class OperatorProviderListActivity extends AppCompatActivity implements T
     String topUpType;
 
     public static final String TOPUP_TYPE = "topuptype";
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

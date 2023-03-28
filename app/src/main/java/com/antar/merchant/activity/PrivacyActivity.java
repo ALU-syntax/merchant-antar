@@ -1,5 +1,6 @@
 package com.antar.merchant.activity;
 
+import android.content.Context;
 import android.graphics.Color;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import com.antar.merchant.R;
 import com.antar.merchant.json.PrivacyRequestJson;
 import com.antar.merchant.json.PrivacyResponseJson;
 import com.antar.merchant.models.SettingsModel;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.NetworkUtils;
 import com.antar.merchant.utils.api.ServiceGenerator;
 import com.antar.merchant.utils.api.service.MerchantService;
@@ -29,6 +31,10 @@ public class PrivacyActivity extends AppCompatActivity {
     WebView webView;
     ImageView backbtn;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

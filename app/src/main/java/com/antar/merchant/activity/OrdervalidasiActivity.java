@@ -12,6 +12,7 @@ import retrofit2.Response;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -26,6 +27,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.antar.merchant.utils.LocaleHelper;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.antar.merchant.R;
 import com.antar.merchant.constants.BaseApp;
@@ -59,6 +61,11 @@ public class OrdervalidasiActivity extends AppCompatActivity {
     MenuItem menuitem;
     private TextView dibayardriver;
     private static final int REQUEST_PERMISSION_CALL = 992;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

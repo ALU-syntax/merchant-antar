@@ -1,6 +1,7 @@
 package com.antar.merchant.activity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -25,6 +26,7 @@ import com.antar.merchant.R;
 import com.antar.merchant.constants.BaseApp;
 import com.antar.merchant.json.FcmKeyResponseJson;
 import com.antar.merchant.json.FcmRequestJson;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.api.ServiceGenerator;
 import com.antar.merchant.utils.api.service.MerchantService;
 import com.antar.merchant.utils.local_interface.OnBpjsItemClick;
@@ -66,6 +68,11 @@ public class TopUpBpjsActivity extends AppCompatActivity implements OnBpjsItemCl
     LinearLayout llHistory;
     private String keyss;
     List<MobilePulsaHealthBPJSResponseModel> mobileBPJSHistory = new ArrayList<>();
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override

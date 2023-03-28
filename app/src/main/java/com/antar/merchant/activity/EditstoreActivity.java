@@ -12,6 +12,7 @@ import retrofit2.Response;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -30,6 +31,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.antar.merchant.utils.LocaleHelper;
 import com.google.android.gms.maps.model.LatLng;
 import com.antar.merchant.R;
 import com.antar.merchant.constants.BaseApp;
@@ -63,6 +65,12 @@ public class EditstoreActivity extends AppCompatActivity {
     String latitude, longitude;
     byte[] imageByteArray;
     Bitmap decoded;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

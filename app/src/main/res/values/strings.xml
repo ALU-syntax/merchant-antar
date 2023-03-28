@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Merchant BUMdesKu </string>
+    <string name="app_name">Merchant Antar </string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCiWtYdtXeZALg4FM9bP2dysxDaptNpGr8</string>
     <string name="loginplaystore">821651748354835</string>
 
     <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="introtext1">Daftar!</string>
-    <string name="introdesc1">Promosikan produk kamu bersama M-ojek partner</string>
+    <string name="introdesc1">Promosikan produk kamu bersama Antar partner</string>
     <string name="introtext2">Fitur Yang Mudah</string>
     <string name="introdesc2">Seluruh orderan terdata rapih</string>
     <string name="introtext3">Delivery Order</string>
@@ -139,5 +139,6 @@
     <string name="merchant_partner">Merchant Partner</string>
     <string name="enable_location">Izinkan Lokasi</string>
     <string name="trems_condition">Untuk menggunakan aplikasi mohon izinkan lokasi dan aktifkan maps</string>
+    <string name="choose_language">Pilih Bahasa</string>
 
 </resources>

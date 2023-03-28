@@ -52,6 +52,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "767374487207-hgvno88cgoefqdf8nlmlqcngarnlr3ve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.antar.merchant",
+            "certificate_hash": "634488f2e6a11273f4396fcef74f24abf261eaea"
+          }
+        },
+        {
           "client_id": "767374487207-qe3iesegiksf4nchvoa0mt61o6fibjnk.apps.googleusercontent.com",
           "client_type": 3
         }

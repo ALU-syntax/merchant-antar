@@ -1,6 +1,7 @@
 package com.antar.merchant.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -14,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
+import com.antar.merchant.utils.LocaleHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 import com.antar.merchant.R;
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView navigation;
     int previousSelect = 0;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     public static MainActivity getInstance() {
         return mainActivity;
