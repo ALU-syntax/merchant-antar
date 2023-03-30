@@ -99,7 +99,8 @@ public class EditmenuActivity extends AppCompatActivity {
 
         namamenu.setText(nama);
         descmenu.setText(deskripsi);
-        Utility.currencyTXT(hargamenu, harga, this);
+//        Utility.currencyTXT(hargamenu, harga, this);
+        Utility.convertLocaleCurrencyTV(hargamenu, this, harga);
 
 
         PicassoTrustAll.getInstance(this)
@@ -121,7 +122,8 @@ public class EditmenuActivity extends AppCompatActivity {
         if (actived.equals("1")) {
             activepromo.setChecked(true);
             hargapromo.setEnabled(true);
-            Utility.currencyTXT(hargapromo, hargapromosi, this);
+//            Utility.currencyTXT(hargapromo, hargapromosi, this);
+            Utility.convertLocaleCurrencyTV(hargapromo, this, hargapromosi);
             hargapromo.addTextChangedListener(Utility.currencyTW(hargapromo, this));
         } else {
             activepromo.setChecked(false);

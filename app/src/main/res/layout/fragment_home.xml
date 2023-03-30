@@ -44,7 +44,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Saldo"
+                            android:text="@string/home_balance"
                             android:textColor="@color/white"
                             android:textSize="18dp" />
 
@@ -89,7 +89,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
-                                android:text="Topup"
+                                android:text="@string/home_topup"
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
                         </RelativeLayout>
@@ -140,7 +140,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
-                                android:text="Tarik uang"
+                                android:text="@string/home_withdraw"
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
                         </RelativeLayout>
@@ -165,7 +165,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
-                                android:text="Bantuan"
+                                android:text="@string/home_help"
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
                         </RelativeLayout>
@@ -189,7 +189,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
-                                android:text="Detail"
+                                android:text="@string/home_details"
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
                         </RelativeLayout>
@@ -311,14 +311,14 @@
                 <customfonts.TextViewSFProDisplayMedium
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Status buka/tutup"
+                    android:text="@string/home_status"
                     android:gravity="center_vertical"
                     android:textColor="@color/black"
                     android:textSize="15dp" />
                 <customfonts.TextViewSFProDisplayRegular
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="set status buka/tutup"
+                    android:text="@string/home_set_status"
                     android:gravity="center_vertical"
                     android:textColor="@color/black"
                     android:textSize="12dp" />

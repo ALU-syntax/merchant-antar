@@ -78,6 +78,8 @@ public class HomeFragment extends Fragment {
         sp = new SettingPreference(context);
         onoff = getView.findViewById(R.id.onoff);
 
+
+
         topup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -187,7 +189,8 @@ public class HomeFragment extends Fragment {
                         AyoPulsaApiHelper.getInstance().setHeader("Bearer "+ response.body().getAyoPesanApiToken());
                         order = response.body().getData();
                         shimmertutup();
-                        Utility.currencyTXT(saldo,response.body().getSaldo(),context);
+//                        Utility.currencyTXT(saldo,response.body().getSaldo(),context);
+                        Utility.convertLocaleCurrencyTV(saldo, context, response.body().getSaldo());
                         orderitem = new OrderItem(context, order, R.layout.item_order);
                         orderanmasuk.setAdapter(orderitem);
                         if (response.body().getData().isEmpty()) {

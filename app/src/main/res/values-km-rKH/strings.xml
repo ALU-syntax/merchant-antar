@@ -141,5 +141,13 @@
     <string name="enable_location">អនុញ្ញាតទីតាំង</string>
     <string name="trems_condition">ដើម្បីប្រើកម្មវិធី សូមអនុញ្ញាតទីតាំង និងបើកផែនទី</string>
     <string name="choose_language">ជ្រើសរើសភាសា</string>
+    <string name="home_balance">តុល្យភាព</string>
+    <string name="home_topup">បញ្ចូលទឹកប្រាក់</string>
+    <string name="home_withdraw">ដក</string>
+    <string name="home_help">ជំនួយ</string>
+    <string name="home_details">ព័ត៌មានលម្អិត</string>
+    <string name="home_status">ស្ថានភាព បើក/បិទ</string>
+    <string name="home_set_status">កំណត់ ស្ថានភាព បើក/បិទ</string>
+    <string name="currency">៛</string>
 
 </resources>

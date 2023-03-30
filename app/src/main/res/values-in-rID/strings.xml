@@ -141,5 +141,13 @@
     <string name="enable_location">Izinkan Lokasi</string>
     <string name="trems_condition">Untuk menggunakan aplikasi mohon izinkan lokasi dan aktifkan maps</string>
     <string name="choose_language">Pilih Bahasa</string>
+    <string name="home_balance">Saldo</string>
+    <string name="home_topup">Topup</string>
+    <string name="home_withdraw">Tarik uang</string>
+    <string name="home_help">Bantuan</string>
+    <string name="home_details">Detail</string>
+    <string name="home_status">Status buka/tutup</string>
+    <string name="home_set_status">set status buka/tutup</string>
+    <string name="currency">$</string>
 
 </resources>

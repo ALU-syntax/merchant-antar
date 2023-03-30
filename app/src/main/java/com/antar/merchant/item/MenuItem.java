@@ -51,7 +51,8 @@ public class MenuItem extends RecyclerView.Adapter<MenuItem.ItemRowHolder> {
         } else {
             holder.catatan.setText(singleItem.getCatatan());
         }
-        Utility.currencyTXT(holder.jumlahhargamenu, singleItem.getTotalharga(), mContext);
+//        Utility.currencyTXT(holder.jumlahhargamenu, singleItem.getTotalharga(), mContext);
+        Utility.convertLocaleCurrencyTV(holder.jumlahhargamenu, mContext, singleItem.getTotalharga());
 
     }
 

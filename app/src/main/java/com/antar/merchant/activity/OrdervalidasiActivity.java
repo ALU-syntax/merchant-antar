@@ -373,8 +373,10 @@ public class OrdervalidasiActivity extends AppCompatActivity {
 
                         Double dibayar = Double.parseDouble(transaksi.getTotal_biaya())/1.1;
                         String dibayardr = String.valueOf(dibayar);
-                        Utility.currencyTXT(totalharga,transaksi.getTotal_biaya(),OrdervalidasiActivity.this);
-                        Utility.currencyTXT(dibayardriver, dibayardr,OrdervalidasiActivity.this);
+//                        Utility.currencyTXT(totalharga,transaksi.getTotal_biaya(),OrdervalidasiActivity.this);
+//                        Utility.currencyTXT(dibayardriver, dibayardr,OrdervalidasiActivity.this);
+                        Utility.convertLocaleCurrencyTV(totalharga, OrdervalidasiActivity.this, transaksi.getTotal_biaya());
+                        Utility.convertLocaleCurrencyTV(dibayardriver, OrdervalidasiActivity.this, dibayardr);
                         kodevalidasi.setText(transaksi.getStruk());
 
                         orderItem(response.body().getItem());

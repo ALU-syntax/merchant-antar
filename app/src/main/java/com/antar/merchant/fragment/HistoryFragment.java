@@ -115,10 +115,14 @@ public class HistoryFragment extends Fragment {
                     if (Objects.requireNonNull(response.body()).getMessage().equalsIgnoreCase("success")) {
                         order = response.body().getData();
                         shimmertutup();
-                        Utility.currencyTXT(harian,response.body().getDaily(),context);
-                        Utility.currencyTXT(bulanan,response.body().getMonthly(),context);
-                        Utility.currencyTXT(tahunan,response.body().getYear(),context);
-                        Utility.currencyTXT(pemasukan,response.body().getEarning(),context);
+//                        Utility.currencyTXT(harian,response.body().getDaily(),context);
+//                        Utility.currencyTXT(bulanan,response.body().getMonthly(),context);
+//                        Utility.currencyTXT(tahunan,response.body().getYear(),context);
+//                        Utility.currencyTXT(pemasukan,response.body().getEarning(),context);
+                        Utility.convertLocaleCurrencyTV(harian, context, response.body().getDaily());
+                        Utility.convertLocaleCurrencyTV(bulanan, context, response.body().getMonthly());
+                        Utility.convertLocaleCurrencyTV(tahunan, context, response.body().getYear());
+                        Utility.convertLocaleCurrencyTV(pemasukan, context, response.body().getEarning());
                         orderitem = new OrderItem(context, order, R.layout.item_order);
                         historiorder.setAdapter(orderitem);
                         if (response.body().getData().isEmpty()) {

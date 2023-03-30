@@ -86,14 +86,17 @@ public class MenusItem extends RecyclerView.Adapter<MenusItem.ItemRowHolder> {
             holder.promobadge.setVisibility(View.VISIBLE);
             holder.shimmerview.startShimmerAnimation();
             holder.hargapromo.setVisibility(View.VISIBLE);
-            Utility.currencyTXT(holder.hargapromo, singleItem.getHarga_item(), mContext);
+//            Utility.currencyTXT(holder.hargapromo, singleItem.getHarga_item(), mContext);
+            Utility.convertLocaleCurrencyTV(holder.hargapromo, mContext, singleItem.getHarga_item());
             holder.hargapromo.setPaintFlags(holder.hargapromo.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-            Utility.currencyTXT(holder.hargamenu, singleItem.getHarga_promo(), mContext);
+//            Utility.currencyTXT(holder.hargamenu, singleItem.getHarga_promo(), mContext);
+            Utility.convertLocaleCurrencyTV(holder.hargamenu, mContext, singleItem.getHarga_promo());
         } else {
             holder.promobadge.setVisibility(View.GONE);
             holder.shimmerview.stopShimmerAnimation();
             holder.hargapromo.setVisibility(View.GONE);
-            Utility.currencyTXT(holder.hargamenu, singleItem.getHarga_item(), mContext);
+//            Utility.currencyTXT(holder.hargamenu, singleItem.getHarga_item(), mContext);
+            Utility.convertLocaleCurrencyTV(holder.hargamenu, mContext, singleItem.getHarga_item());
         }
 
         if (singleItem.getStatus_item().equals("1")) {
