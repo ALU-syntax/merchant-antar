@@ -101,6 +101,7 @@ public class ServiceGenerator {
             String credentials = username + ":" + password;
             final String basic =
                     "Basic " + Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
+//            System.out.println("debugBasicAuth: " + basic);
 
             httpClient.addInterceptor(new Interceptor() {
                 @Override

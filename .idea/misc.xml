@@ -3,17 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.1791363830696879" />
+        <entry key="app/src/main/res/layout/activity_device_list.xml" value="0.17828131680205217" />
+        <entry key="app/src/main/res/layout/activity_editmitra.xml" value="0.1791363830696879" />
+        <entry key="app/src/main/res/layout/activity_ordervalidasi.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/dialog_payment_details.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/dialog_spinner_item.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_enablelocation.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/fragment_fullimage.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.13067655236329936" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_menu.xml" value="0.2935238952767192" />
+        <entry key="app/src/main/res/layout/item_order.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/shimmerorder.xml" value="0.1791363830696879" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

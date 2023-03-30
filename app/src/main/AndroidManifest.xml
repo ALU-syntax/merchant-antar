@@ -4,6 +4,9 @@
     package="com.antar.merchant"
     android:installLocation="auto">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -109,6 +112,11 @@
             android:name="com.antar.merchant.activity.WaActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.antar.merchant.activity.DeviceListActivity"
+            android:screenOrientation="portrait"
+            />
 
         <activity
             android:name="com.antar.merchant.activity.PrivacyActivity"

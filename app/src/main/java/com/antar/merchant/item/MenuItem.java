@@ -1,6 +1,7 @@
 package com.antar.merchant.item;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,8 @@ public class MenuItem extends RecyclerView.Adapter<MenuItem.ItemRowHolder> {
     private List<ItemPesananModel> dataList;
     private Context mContext;
     private int rowLayout;
+
+    SharedPreferences sharedPreferences;
 
     public MenuItem(Context context, List<ItemPesananModel> dataList, int rowLayout) {
         this.dataList = dataList;
