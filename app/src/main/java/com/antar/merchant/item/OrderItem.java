@@ -13,12 +13,15 @@ import android.widget.TextView;
 import com.antar.merchant.R;
 import com.antar.merchant.activity.OrdervalidasiActivity;
 import com.antar.merchant.models.TransaksiMerchantModel;
+import com.antar.merchant.utils.LocaleHelper;
 import com.antar.merchant.utils.SettingPreference;
+import com.antar.merchant.utils.Utility;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Currency;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -89,18 +92,59 @@ public class OrderItem extends RecyclerView.Adapter<OrderItem.ItemRowHolder> {
         holder.text.setText(singleItem.fullnama);
         holder.textinv.setText("INV-"+singleItem.getId_transaksi()+singleItem.getIdtransmerchant());
 
-        SettingPreference sp = new SettingPreference(mContext);
-        if (singleItem.total_biaya.length() == 1) {
-            holder.nominal.setText(singleItem.getQuantity()+" item "+mContext.getString(R.string.text_with_bullet)+" "+sp.getSetting()[0]+"0.0" + singleItem.total_biaya);
-        } else if (singleItem.total_biaya.length() == 2) {
-            holder.nominal.setText(singleItem.getQuantity()+" item "+mContext.getString(R.string.text_with_bullet)+" "+sp.getSetting()[0]+"0." + singleItem.total_biaya);
-        } else {
-            Double getprice = Double.valueOf(singleItem.total_biaya);
-            DecimalFormat formatter = new DecimalFormat("#,###,###");
-            String formattedString = formatter.format(getprice);
-            holder.nominal.setText(singleItem.getQuantity()+" item "+mContext.getString(R.string.text_with_bullet)+" "+sp.getSetting()[0] + formattedString.replace(",","."));
+//        SettingPreference sp = new SettingPreference(mContext);
+//        if (singleItem.total_biaya.length() == 1) {
+//            holder.nominal.setText(singleItem.getQuantity()+" item "+mContext.getString(R.string.text_with_bullet)+" "+sp.getSetting()[0]+"0.0" + singleItem.total_biaya);
+//        } else if (singleItem.total_biaya.length() == 2) {
+//            holder.nominal.setText(singleItem.getQuantity()+" item "+mContext.getString(R.string.text_with_bullet)+" "+sp.getSetting()[0]+"0." + singleItem.total_biaya);
+//        } else {
+//            Double getprice = Double.valueOf(singleItem.total_biaya);
+//            DecimalFormat formatter = new DecimalFormat("#,###,###");
+//            String formattedString = formatter.format(getprice);
+//            holder.nominal.setText(singleItem.getQuantity()+" item "+mContext.getString(R.string.text_with_bullet)+" "+sp.getSetting()[0] + formattedString.replace(",","."));
+//
+//        }
 
+        DecimalFormat formatter = new DecimalFormat("#,###,###");
+        switch (LocaleHelper.getLanguage(mContext))
+        {
+            case "en":
+                Currency currency = Currency.getInstance("USD");
+                DecimalFormat decimalFormat = new DecimalFormat("#¤");
+                decimalFormat.setCurrency(currency);
+                Double currencyDollar = 0.000067;
+                Double convertDollar = Double.parseDouble(singleItem.total_biaya) * currencyDollar;
+
+                String formattedString = decimalFormat.format(convertDollar);
+
+                holder.nominal.setText(singleItem.getQuantity()+" item "+mContext.getString(R.string.text_with_bullet)+" "+ formattedString.replace(",", "."));
+                break;
+            case "km":
+                Double currencyCambodianReal = 0.270410891973339136;
+                Double convertToCambodianReal = Double.parseDouble(singleItem.total_biaya) * currencyCambodianReal;
+
+                if (singleItem.total_biaya.length() == 1) {
+                    holder.nominal.setText("៛"+"0.0" + singleItem.total_biaya);
+                } else if (singleItem.total_biaya.length() == 2) {
+                    holder.nominal.setText("៛"+"0." + singleItem.total_biaya);
+                } else {
+                    String formattedStringCambodiaReal = formatter.format(convertToCambodianReal);
+                    holder.nominal.setText("៛" + formattedStringCambodiaReal.replace(",","."));
+                }
+                break;
+            case "in":
+                if (singleItem.total_biaya.length() == 1) {
+                    holder.nominal.setText("Rp"+"0.0" + singleItem.total_biaya);
+                } else if (singleItem.total_biaya.length() == 2) {
+                    holder.nominal.setText("Rp"+"0." + singleItem.total_biaya);
+                } else {
+                    Double getprice = Double.valueOf(singleItem.total_biaya);
+                    String formattedStringRupiah = formatter.format(getprice);
+                    holder.nominal.setText("Rp" + formattedStringRupiah.replace(",","."));
+                }
+                break;
         }
+
         DateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US);
         Date date = null;
         try {

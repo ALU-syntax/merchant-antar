@@ -377,6 +377,7 @@ public class OrdervalidasiActivity extends AppCompatActivity {
 //                        Utility.currencyTXT(dibayardriver, dibayardr,OrdervalidasiActivity.this);
                         Utility.convertLocaleCurrencyTV(totalharga, OrdervalidasiActivity.this, transaksi.getTotal_biaya());
                         Utility.convertLocaleCurrencyTV(dibayardriver, OrdervalidasiActivity.this, dibayardr);
+                        System.out.println("debugDibayar: " + dibayardr);
                         kodevalidasi.setText(transaksi.getStruk());
 
                         orderItem(response.body().getItem());

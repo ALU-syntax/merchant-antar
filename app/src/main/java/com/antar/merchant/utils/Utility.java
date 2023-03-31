@@ -12,10 +12,12 @@ import android.widget.TextView;
 
 
 import com.antar.merchant.R;
+import com.antar.merchant.activity.MainActivity;
 import com.antar.merchant.constants.BaseApp;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.Currency;
 import java.util.Locale;
 
 
@@ -93,13 +95,13 @@ public class Utility {
                         switch (LocaleHelper.getLanguage(context))
                         {
                             case "en":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
                                 break;
                             case "in":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
                                 break;
                             case "km":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
                                 break;
                         }
                         editText.setSelection(editText.getText().length());
@@ -108,13 +110,13 @@ public class Utility {
                         switch(LocaleHelper.getLanguage(context))
                         {
                             case "en":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
                                 break;
                             case "in":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
                                 break;
                             case "km":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
                                 break;
                         }
                         editText.setSelection(editText.getText().length());
@@ -127,13 +129,13 @@ public class Utility {
                         switch(LocaleHelper.getLanguage(context))
                         {
                             case "en":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
                                 break;
                             case "in":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
                                 break;
                             case "km":
-                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
+                                editText.setText(MainActivity.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
                                 break;
                         }
 
@@ -162,20 +164,23 @@ public class Utility {
 
     public static void currencyTXT(TextView text, String nomninal, Context context) {
         SettingPreference sp = new SettingPreference(context);
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         if (nomninal.length() == 1) {
             text.setText(sp.getSetting()[0]+"0.0" + nomninal);
+            System.out.println("debugSP: " + sp.getSetting()[0]);
 
         } else if (nomninal.length() == 2) {
             text.setText(sp.getSetting()[0]+"0." + nomninal);
+            System.out.println("debugSP: " + sp.getSetting()[0]);
 
         } else {
-//            Double getprice = Double.valueOf(nomninal);
-//            DecimalFormat formatter = new DecimalFormat("#,###,###");
-//            String formattedString = formatter.format(getprice);
+            Double getprice = Double.valueOf(nomninal);
             DecimalFormat formatter = new DecimalFormat("#,###,###");
-            String formattedString = NumberFormat.getCurrencyInstance(new Locale(LocaleHelper.getLanguage(context))).format(nomninal);
+            String formattedString = formatter.format(getprice);
+            System.out.println("debugSP: " + sp.getSetting()[0]);
+//            DecimalFormat formatter = new DecimalFormat("#,###,###");
+//            String formattedString = NumberFormat.getCurrencyInstance(new Locale(LocaleHelper.getLanguage(context))).format(nomninal);
             text.setText(sp.getSetting()[0] + formattedString.replace(",","."));
+
         }
     }
 
@@ -211,32 +216,43 @@ public class Utility {
     }
 
     public static void convertLocaleCurrencyTV(TextView text, Context context,String nominal){
+        DecimalFormat formatter = new DecimalFormat("#,###,###");
         switch (LocaleHelper.getLanguage(context))
         {
             case "en":
-                double currencyDollar = 0.000067;
-                double convertDollar = Integer.parseInt(nominal) * currencyDollar;
-                String dollar = "$" + convertDollar;
-                if (nominal.isEmpty()){
-                    text.setText("$0.0");
-                }
-                text.setText(dollar);
+                Currency currency = Currency.getInstance("USD");
+                DecimalFormat decimalFormat = new DecimalFormat("#¤");
+                decimalFormat.setCurrency(currency);
+                Double currencyDollar = 0.000067;
+                Double convertDollar = Double.parseDouble(nominal) * currencyDollar;
+
+                String formattedString = decimalFormat.format(convertDollar);
+
+                text.setText(formattedString.replace(",", "."));
                 break;
             case "km":
-                double currencyCambodianReal = 0.27;
-                double convertToCambodianReal = Integer.parseInt(nominal) * currencyCambodianReal;
-                String cambodianReal = "៛" + convertToCambodianReal;
-                if (nominal.isEmpty()){
-                    text.setText("៛0.0");
+                Double currencyCambodianReal = 0.270410891973339136;
+                Double convertToCambodianReal = Double.parseDouble(nominal) * currencyCambodianReal;
+
+                if (nominal.length() == 1) {
+                    text.setText("៛"+"0.0" + nominal);
+                } else if (nominal.length() == 2) {
+                    text.setText("៛"+"0." + nominal);
+                } else {
+                    String formattedStringCambodiaReal = formatter.format(convertToCambodianReal);
+                    text.setText("៛" + formattedStringCambodiaReal.replace(",","."));
                 }
-                text.setText(cambodianReal);
                 break;
             case "in":
-                if (nominal.isEmpty()){
-                    text.setText("Rp0,00");
+                if (nominal.length() == 1) {
+                    text.setText("Rp"+"0.0" + nominal);
+                } else if (nominal.length() == 2) {
+                    text.setText("Rp"+"0." + nominal);
+                } else {
+                    Double getprice = Double.valueOf(nominal);
+                    String formattedStringRupiah = formatter.format(getprice);
+                    text.setText("Rp" + formattedStringRupiah.replace(",","."));
                 }
-                String rupiah = "Rp" + nominal+ ",00";
-                text.setText(rupiah);
                 break;
         }
     }

@@ -43,7 +43,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Pendapatan"
+                            android:text="@string/history_income"
                             android:textColor="@color/white"
                             android:textSize="18dp" />
 
@@ -81,7 +81,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
-                                android:text="Harian"
+                                android:text="@string/history_daily"
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 
@@ -119,7 +119,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
-                                android:text="Bulanan"
+                                android:text="@string/history_monthly"
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 
@@ -157,7 +157,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginTop="5dp"
                                 android:gravity="center"
-                                android:text="Tahunan"
+                                android:text="@string/history_yearly"
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 

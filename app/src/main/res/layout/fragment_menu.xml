@@ -39,7 +39,7 @@
                         android:id="@+id/itemada"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Items Tersedia"
+                        android:text="@string/menu_items_available"
                         android:layout_marginTop="5dp"
                         android:gravity="center"/>
 
@@ -61,7 +61,7 @@
                         android:id="@+id/itempromo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Item Promo"
+                        android:text="@string/menu_item_promo"
                         android:layout_marginTop="5dp"
                         android:gravity="center"/>
 
@@ -83,7 +83,7 @@
                         android:id="@+id/itemhabis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Item Stok Habis"
+                        android:text="@string/menu_item_out_of_stock"
                         android:layout_marginTop="5dp"
                         android:gravity="center"/>
 
@@ -107,7 +107,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_round_1"
-                    android:text="Tambah Kategori"
+                    android:text="@string/menu_add_category"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="18dp" />
@@ -126,7 +126,7 @@
         <customfonts.TextViewSFProDisplayMedium
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kategori Aktif"
+            android:text="@string/menu_category_active"
             android:layout_margin="10dp"
             android:textSize="18dp"/>
 
@@ -193,7 +193,7 @@
         <customfonts.TextViewSFProDisplayMedium
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kategori Nonaktif"
+            android:text="@string/menu_category_non_active"
             android:layout_margin="10dp"
             android:textSize="18dp"/>
 
@@ -267,7 +267,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/nodataimage"
                     android:layout_centerHorizontal="true"
-                    android:text="Tidak ada data"
+                    android:text="@string/recycle_no_data"
                     android:textColor="@color/black"
                     android:textSize="18dp">
 

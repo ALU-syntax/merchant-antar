@@ -148,9 +148,9 @@ public class MenuFragment extends Fragment {
                         ordernon = response.body().getDatanon();
                         shimmertutup();
 
-                        itemada.setText(response.body().getTotalitemactive() + " Item Available");
-                        itemhabis.setText(response.body().getTotalitemnonactive() + " Item Out of Stock");
-                        itempromo.setText(response.body().getTotalitempromo() + " Item Promo");
+                        itemada.setText(response.body().getTotalitemactive() + " " + context.getResources().getString(R.string.menu_items_available));
+                        itemhabis.setText(response.body().getTotalitemnonactive() + " " + context.getResources().getString(R.string.menu_item_out_of_stock));
+                        itempromo.setText(response.body().getTotalitempromo() + " " + context.getResources().getString(R.string.menu_item_promo));
                         if (response.body().getData().isEmpty() && response.body().getDatanon().isEmpty()) {
                             rlnodata.setVisibility(View.VISIBLE);
                         } else {

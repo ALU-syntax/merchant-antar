@@ -158,5 +158,16 @@
     <string name="settings_rating">ចំណាត់ថ្នាក់</string>
     <string name="settings_change_language">ប្ដូរ​ភាសា</string>
     <string name="settings_logout">ផ្លាស់ប្តូរគណនី</string>
+    <string name="history_income">ចំណូល</string>
+    <string name="history_daily">ប្រចាំថ្ងៃ</string>
+    <string name="history_monthly">ប្រចាំខែ</string>
+    <string name="history_yearly">ប្រចាំឆ្នាំ</string>
+    <string name="menu_add_category">បន្ថែមប្រភេទ</string>
+    <string name="menu_category_active">ប្រភេទសកម្ម</string>
+    <string name="menu_category_non_active">បិទប្រភេទ</string>
+    <string name="recycle_no_data">ទិន្នន័យទទេ</string>
+    <string name="menu_items_available">ធាតុដែលអាចប្រើបាន</string>
+    <string name="menu_item_promo">ធាតុផ្សព្វផ្សាយ</string>
+    <string name="menu_item_out_of_stock">ទំនិញអស់ពីស្តុក</string>
 
 </resources>

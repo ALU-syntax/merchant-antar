@@ -158,5 +158,16 @@
     <string name="settings_rating">Rating</string>
     <string name="settings_change_language">Change Language</string>
     <string name="settings_logout">Logout</string>
+    <string name="history_income">Income</string>
+    <string name="history_daily">Daily</string>
+    <string name="history_monthly">Monthly</string>
+    <string name="history_yearly">Yearly</string>
+    <string name="menu_add_category">Add Category</string>
+    <string name="menu_category_active">Active Category</string>
+    <string name="menu_category_non_active">Category Non-Active</string>
+    <string name="recycle_no_data">No Data</string>
+    <string name="menu_items_available">Items Available</string>
+    <string name="menu_item_promo">Item Promo</string>
+    <string name="menu_item_out_of_stock">Item Out Of Stock</string>
 
 </resources>

@@ -40,6 +40,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class MainActivity extends AppCompatActivity {
     long mBackPressed;
 
+    private static Context mContext;
 
     public static String apikey;
     LinearLayout mAdViewLayout;
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mContext = this;
         mAdViewLayout = findViewById(R.id.adView);
         fragmentManager = getSupportFragmentManager();
         navigation = findViewById(R.id.navigation);
@@ -208,7 +210,8 @@ public class MainActivity extends AppCompatActivity {
         previousSelect = position;
     }
 
-
-
+    public static Context getContext(){
+        return mContext;
+    }
 
 }

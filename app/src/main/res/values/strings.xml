@@ -157,5 +157,16 @@
     <string name="settings_rating">Rating</string>
     <string name="settings_change_language">Ubah Bahasa</string>
     <string name="settings_logout">Keluar</string>
+    <string name="history_income">Pendapatan</string>
+    <string name="history_daily">Harian</string>
+    <string name="history_monthly">Bulanan</string>
+    <string name="history_yearly">Tahunan</string>
+    <string name="menu_add_category">Tambah Kategori</string>
+    <string name="menu_category_active">Kategori Aktif</string>
+    <string name="menu_category_non_active">Kategori Nonaktif</string>
+    <string name="recycle_no_data">No Data</string>
+    <string name="menu_items_available">Items Tersedia</string>
+    <string name="menu_item_promo">Item Promo</string>
+    <string name="menu_item_out_of_stock">Item Stok Habis</string>
 
 </resources>
