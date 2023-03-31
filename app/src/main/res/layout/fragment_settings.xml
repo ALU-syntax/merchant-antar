@@ -150,7 +150,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Ubah Owner"
+                            android:text="@string/settings_change_owner"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -190,7 +190,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Ubah Lapak"
+                            android:text="@string/settings_change_store"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -230,7 +230,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Ubah Password"
+                            android:text="@string/settings_change_password"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -271,7 +271,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Tentang Kami"
+                            android:text="@string/settings_about_us"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -311,7 +311,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Kebijakan"
+                            android:text="@string/settings_policy"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -351,7 +351,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Bagikan"
+                            android:text="@string/settings_share"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -391,7 +391,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Rating"
+                            android:text="@string/settings_rating"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -431,7 +431,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Ubah Bahasa"
+                            android:text="@string/settings_change_language"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -473,7 +473,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:gravity="center_vertical"
-                            android:text="Keluar"
+                            android:text="@string/settings_logout"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 

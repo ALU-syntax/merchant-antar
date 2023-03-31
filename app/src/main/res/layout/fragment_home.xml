@@ -80,7 +80,7 @@
                                 android:id="@+id/ictopup"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:src="@drawable/ic_topup"/>
+                                android:src="@drawable/ic_topup" />
 
                             <customfonts.TextViewSFProDisplayMedium
                                 android:layout_below="@id/ictopup"

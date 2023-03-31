@@ -149,5 +149,14 @@
     <string name="home_status">ស្ថានភាព បើក/បិទ</string>
     <string name="home_set_status">កំណត់ ស្ថានភាព បើក/បិទ</string>
     <string name="currency">៛</string>
+    <string name="settings_change_owner">ផ្លាស់ប្តូរម្ចាស់</string>
+    <string name="settings_change_store">ផ្លាស់ប្តូរតូប</string>
+    <string name="settings_change_password">ផ្លាស់ប្តូរពាក្យសម្ងាត់</string>
+    <string name="settings_about_us">អំពី​ពួក​យើង</string>
+    <string name="settings_policy">គោលនយោបាយ</string>
+    <string name="settings_share">ចែករំលែក</string>
+    <string name="settings_rating">ចំណាត់ថ្នាក់</string>
+    <string name="settings_change_language">ប្ដូរ​ភាសា</string>
+    <string name="settings_logout">ផ្លាស់ប្តូរគណនី</string>
 
 </resources>

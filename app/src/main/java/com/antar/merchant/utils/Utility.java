@@ -1,7 +1,9 @@
 package com.antar.merchant.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,6 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
+import com.antar.merchant.R;
+import com.antar.merchant.constants.BaseApp;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -74,6 +78,7 @@ public class Utility {
                         originalString = originalString.replace(sp.getSetting()[0], "");
                     }
                     if (originalString.contains(sp.getSetting()[0])) {
+//                        originalString = originalString.replace(sp.getSetting()[0], "");
                         originalString = originalString.replace(sp.getSetting()[0], "");
                     }
                     if (originalString.contains(" ")) {
@@ -84,17 +89,54 @@ public class Utility {
                         editText.setText("");
                         editText.setSelection(editText.getText().length());
                     } else if (String.valueOf(longval).length() == 1) {
-                        editText.setText(sp.getSetting()[0]+"0.0" + String.valueOf(longval));
+//                        editText.setText(sp.getSetting()[0]+"0.0" + String.valueOf(longval));
+                        switch (LocaleHelper.getLanguage(context))
+                        {
+                            case "en":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
+                                break;
+                            case "in":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
+                                break;
+                            case "km":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) +"0.0" + String.valueOf(longval));
+                                break;
+                        }
                         editText.setSelection(editText.getText().length());
                     } else if (String.valueOf(longval).length() == 2) {
-                        editText.setText(sp.getSetting()[0]+"0." + String.valueOf(longval));
+//                        editText.setText(sp.getSetting()[0]+"0." + String.valueOf(longval));
+                        switch(LocaleHelper.getLanguage(context))
+                        {
+                            case "en":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
+                                break;
+                            case "in":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
+                                break;
+                            case "km":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency)+"0." + String.valueOf(longval));
+                                break;
+                        }
                         editText.setSelection(editText.getText().length());
                     } else {
 
                         SettingPreference sp = new SettingPreference(context);
                         DecimalFormat formatter = new DecimalFormat("#,###,###");
                         String formattedString = formatter.format(longval);
-                        editText.setText(sp.getSetting()[0] + formattedString.replace(",","."));
+//                        editText.setText(sp.getSetting()[0] + formattedString.replace(",","."));
+                        switch(LocaleHelper.getLanguage(context))
+                        {
+                            case "en":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
+                                break;
+                            case "in":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
+                                break;
+                            case "km":
+                                editText.setText(BaseApp.getContext().getResources().getString(R.string.currency) + formattedString.replace(",","."));
+                                break;
+                        }
+
                         editText.setSelection(editText.getText().length());
                     }
                     Log.e("aaaa", String.valueOf(longval));

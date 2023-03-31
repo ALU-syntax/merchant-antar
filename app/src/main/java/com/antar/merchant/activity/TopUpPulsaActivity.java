@@ -284,8 +284,9 @@ public class TopUpPulsaActivity extends AppCompatActivity {
             if (data != null) {
                 topUpDetailModel = (PriceListDetailModel) data.getSerializableExtra(Constants.OPERATOR);
                 if (topUpDetailModel!=null) {
-                    Utility.currencyET(productTitle,
-                            String.valueOf(topUpDetailModel.getPrice()), this);
+//                    Utility.currencyET(productTitle,
+//                            String.valueOf(topUpDetailModel.getPrice()), this);
+                    Utility.convertLocaleCurrencyET(productTitle, this, String.valueOf(topUpDetailModel.getPrice()));
                 }
             }
         }

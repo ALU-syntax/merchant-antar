@@ -148,5 +148,14 @@
     <string name="home_status">Status buka/tutup</string>
     <string name="home_set_status">set status buka/tutup</string>
     <string name="currency">Rp</string>
+    <string name="settings_change_owner">Ubah Owner</string>
+    <string name="settings_change_store">Ubah Lapak</string>
+    <string name="settings_change_password">Ubah Password</string>
+    <string name="settings_about_us">Tentang Kami</string>
+    <string name="settings_policy">Kebijakan</string>
+    <string name="settings_share">Bagikan</string>
+    <string name="settings_rating">Rating</string>
+    <string name="settings_change_language">Ubah Bahasa</string>
+    <string name="settings_logout">Keluar</string>
 
 </resources>

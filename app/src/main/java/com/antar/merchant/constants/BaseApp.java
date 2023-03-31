@@ -21,6 +21,8 @@ public class BaseApp extends Application {
 
     private static final int SCHEMA_VERSION = 0;
 
+    private static Context mContext;
+
     private User loginUser;
 
     private Realm realmInstance;
@@ -32,6 +34,7 @@ public class BaseApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        mContext = this;
 
         Realm.init(this);
 
@@ -80,10 +83,8 @@ public class BaseApp extends Application {
         }
     }
 
-
-
-
-
-
+    public static Context getContext(){
+        return mContext;
+    }
 
 }

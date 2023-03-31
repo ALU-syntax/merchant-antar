@@ -149,5 +149,14 @@
     <string name="home_status">Status open/close</string>
     <string name="home_set_status">set status open/close</string>
     <string name="currency">Rp</string>
+    <string name="settings_change_owner">Change Owner</string>
+    <string name="settings_change_store">change stalls</string>
+    <string name="settings_change_password">Change Password</string>
+    <string name="settings_about_us">About Us</string>
+    <string name="settings_policy">Policy</string>
+    <string name="settings_share">Share</string>
+    <string name="settings_rating">Rating</string>
+    <string name="settings_change_language">Change Language</string>
+    <string name="settings_logout">Logout</string>
 
 </resources>
