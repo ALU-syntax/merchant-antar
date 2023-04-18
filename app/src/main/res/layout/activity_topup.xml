@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:gravity="center"
-                    android:text="Nominal:"
+                    android:text="@string/topup_nominal"
                     android:textColor="@color/black" />
 
                 <customfonts.EditTextSFProDisplayMedium
@@ -202,7 +202,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="15dp"
-                    android:text="Metode Pembayaran"
+                    android:text="@string/topup_payment_method"
                     android:textColor="@color/black"
                     android:textSize="18dp" />
 
@@ -292,7 +292,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
                                         android:maxLines="2"
-                                        android:text="Transfer Bank Dan Minimarket"
+                                        android:text="@string/topup_transfer_bank_and_minimarket"
                                         android:textColor="@color/black"
                                         android:textSize="14dp" />
 

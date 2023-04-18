@@ -11,6 +11,9 @@
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_top_up_pulsa.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/activity_topup.xml" value="0.1791363830696879" />
+        <entry key="app/src/main/res/layout/activity_wa.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_wallet.xml" value="0.1791363830696879" />
+        <entry key="app/src/main/res/layout/activity_withdraw.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/dialog_payment_details.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/dialog_spinner_item.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.25" />

@@ -131,7 +131,7 @@
                                 android:id="@+id/icwithdraw"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:src="@drawable/ic_withdraw"/>
+                                android:src="@drawable/ic_withdraw" />
 
                             <customfonts.TextViewSFProDisplayMedium
                                 android:layout_below="@id/icwithdraw"
@@ -156,7 +156,7 @@
                                 android:id="@+id/icwa"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:src="@drawable/ic_wa"/>
+                                android:src="@drawable/ic_wa" />
 
                             <customfonts.TextViewSFProDisplayMedium
                                 android:layout_below="@id/icwa"

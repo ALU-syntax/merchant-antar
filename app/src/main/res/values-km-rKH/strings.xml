@@ -169,5 +169,17 @@
     <string name="menu_items_available">ធាតុដែលអាចប្រើបាន</string>
     <string name="menu_item_promo">ធាតុផ្សព្វផ្សាយ</string>
     <string name="menu_item_out_of_stock">ទំនិញអស់ពីស្តុក</string>
+    <string name="topup_nominal">នាមករណ៍:</string>
+    <string name="topup_payment_method">វិធី​សា​ស្រ្ត​ទូទាត់</string>
+    <string name="topup_transfer_bank_and_minimarket">ការផ្ទេរប្រាក់តាមធនាគារ និងទីផ្សារខ្នាតតូច</string>
+    <string name="withdraw_amount">ចំនួនទឹកប្រាក់</string>
+    <string name="withdraw_bank">ធនាគារ</string>
+    <string name="withdraw_name">ឈ្មោះ</string>
+    <string name="withdraw_account_number">លេខគណនី / លេខទូរស័ព្ទ</string>
+    <string name="withdraw_send">ផ្ញើ</string>
+    <string name="wa_information">សរសេរព័ត៌មាន</string>
+    <string name="wa_send">ើ</string>
+    <string name="wallet_no_data">គ្មាន​ទិន្នន័យ</string>
+    <string name="settings_copy_refferal_code">ចម្លងលេខកូដយោង</string>
 
 </resources>

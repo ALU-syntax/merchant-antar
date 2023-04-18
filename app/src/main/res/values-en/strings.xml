@@ -169,5 +169,17 @@
     <string name="menu_items_available">Items Available</string>
     <string name="menu_item_promo">Item Promo</string>
     <string name="menu_item_out_of_stock">Item Out Of Stock</string>
+    <string name="topup_nominal">Nominal:</string>
+    <string name="topup_payment_method">Payment Method</string>
+    <string name="topup_transfer_bank_and_minimarket">Bank Transfers and Minimarkets</string>
+    <string name="withdraw_amount">Amount</string>
+    <string name="withdraw_bank">Bank</string>
+    <string name="withdraw_name">Name</string>
+    <string name="withdraw_account_number">Account Number / Telephone Number</string>
+    <string name="withdraw_send">Send</string>
+    <string name="wa_information">Write Info</string>
+    <string name="wa_send">Kirim</string>
+    <string name="wallet_no_data">No Data</string>
+    <string name="settings_copy_refferal_code">Copy Referral Code</string>
 
 </resources>

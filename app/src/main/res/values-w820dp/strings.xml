@@ -167,5 +167,17 @@
     <string name="menu_items_available">Items Tersedia</string>
     <string name="menu_item_promo">Item Promo</string>
     <string name="menu_item_out_of_stock">Item Stok Habis</string>
+    <string name="topup_nominal">Nominal:</string>
+    <string name="topup_payment_method">Metode Pembayaran</string>
+    <string name="topup_transfer_bank_and_minimarket">Transfer Bank Dan Minimarket</string>
+    <string name="withdraw_amount">Jumlah</string>
+    <string name="withdraw_bank">Bank</string>
+    <string name="withdraw_name">Nama</string>
+    <string name="withdraw_account_number">No rekening/No hp</string>
+    <string name="withdraw_send">Kirim</string>
+    <string name="wa_information">Tulis Informasi</string>
+    <string name="wa_send">Kirim</string>
+    <string name="wallet_no_data">No Data</string>
+    <string name="settings_copy_refferal_code">Salin Referal Code</string>
 
 </resources>

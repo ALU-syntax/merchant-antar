@@ -104,7 +104,7 @@
                                 android:textColor="@color/red"
                                 android:id="@+id/txt_salin_refcode"
                                 android:layout_marginLeft="20dp"
-                                android:text="Salin Referal Code "
+                                android:text="@string/settings_copy_refferal_code"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>

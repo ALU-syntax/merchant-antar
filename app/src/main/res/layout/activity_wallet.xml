@@ -133,7 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/nodataimage"
             android:layout_centerHorizontal="true"
-            android:text="No Data"
+            android:text="@string/wallet_no_data"
             android:textColor="@color/black"
             android:textSize="20dp">
 
