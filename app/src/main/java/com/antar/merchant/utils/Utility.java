@@ -215,21 +215,54 @@ public class Utility {
         }
     }
 
+//    public static void convertLocaleCurrencyTV(TextView text, Context context,String nominal){
+//        DecimalFormat formatter = new DecimalFormat("#,###,###");
+//        switch (LocaleHelper.getLanguage(context))
+//        {
+//            case "en":
+//                Currency currency = Currency.getInstance("USD");
+//                DecimalFormat decimalFormat = new DecimalFormat("#¤");
+//                decimalFormat.setCurrency(currency);
+//                Double currencyDollar = 0.000067;
+//                Double convertDollar = Double.parseDouble(nominal) * currencyDollar;
+//
+//                String formattedString = decimalFormat.format(convertDollar);
+//
+//                text.setText(formattedString.replace(",", "."));
+//                break;
+//            case "km":
+//                Double currencyCambodianReal = 0.270410891973339136;
+//                Double convertToCambodianReal = Double.parseDouble(nominal) * currencyCambodianReal;
+//
+//                if (nominal.length() == 1) {
+//                    text.setText("៛"+"0.0" + nominal);
+//                } else if (nominal.length() == 2) {
+//                    text.setText("៛"+"0." + nominal);
+//                } else {
+//                    String formattedStringCambodiaReal = formatter.format(convertToCambodianReal);
+//                    text.setText("៛" + formattedStringCambodiaReal.replace(",","."));
+//                }
+//                break;
+//            case "in":
+//                if (nominal.length() == 1) {
+//                    text.setText("Rp"+"0.0" + nominal);
+//                } else if (nominal.length() == 2) {
+//                    text.setText("Rp"+"0." + nominal);
+//                } else {
+//                    Double getprice = Double.valueOf(nominal);
+//                    String formattedStringRupiah = formatter.format(getprice);
+//                    text.setText("Rp" + formattedStringRupiah.replace(",","."));
+//                }
+//                break;
+//        }
+//    }
+
     public static void convertLocaleCurrencyTV(TextView text, Context context,String nominal){
         DecimalFormat formatter = new DecimalFormat("#,###,###");
         switch (LocaleHelper.getLanguage(context))
         {
             case "en":
-                Currency currency = Currency.getInstance("USD");
-                DecimalFormat decimalFormat = new DecimalFormat("#¤");
-                decimalFormat.setCurrency(currency);
-                Double currencyDollar = 0.000067;
-                Double convertDollar = Double.parseDouble(nominal) * currencyDollar;
-
-                String formattedString = decimalFormat.format(convertDollar);
-
-                text.setText(formattedString.replace(",", "."));
-                break;
+            case "in":
             case "km":
                 Double currencyCambodianReal = 0.270410891973339136;
                 Double convertToCambodianReal = Double.parseDouble(nominal) * currencyCambodianReal;
@@ -243,32 +276,45 @@ public class Utility {
                     text.setText("៛" + formattedStringCambodiaReal.replace(",","."));
                 }
                 break;
-            case "in":
-                if (nominal.length() == 1) {
-                    text.setText("Rp"+"0.0" + nominal);
-                } else if (nominal.length() == 2) {
-                    text.setText("Rp"+"0." + nominal);
-                } else {
-                    Double getprice = Double.valueOf(nominal);
-                    String formattedStringRupiah = formatter.format(getprice);
-                    text.setText("Rp" + formattedStringRupiah.replace(",","."));
-                }
-                break;
         }
     }
+
+//    public static void convertLocaleCurrencyET(EditText text, Context context,String nominal){
+//        switch (LocaleHelper.getLanguage(context))
+//        {
+//            case "en":
+//                double currencyDollar = 0.000067;
+//                double convertDollar = Integer.parseInt(nominal) * currencyDollar;
+//                String dollar = "$" + convertDollar;
+//                if (nominal.isEmpty()){
+//                    text.setText("$0.0");
+//                }
+//                text.setText(dollar);
+//                break;
+//            case "km":
+//                double currencyCambodianReal = 0.27;
+//                double convertToCambodianReal = Integer.parseInt(nominal) * currencyCambodianReal;
+//                String cambodianReal = "៛" + convertToCambodianReal;
+//                if (nominal.isEmpty()){
+//                    text.setText("៛0.0");
+//                }
+//                text.setText(cambodianReal);
+//                break;
+//            case "in":
+//                if (nominal.isEmpty()){
+//                    text.setText("Rp0,00");
+//                }
+//                String rupiah = "Rp" + nominal;
+//                text.setText(rupiah);
+//                break;
+//        }
+//    }
 
     public static void convertLocaleCurrencyET(EditText text, Context context,String nominal){
         switch (LocaleHelper.getLanguage(context))
         {
             case "en":
-                double currencyDollar = 0.000067;
-                double convertDollar = Integer.parseInt(nominal) * currencyDollar;
-                String dollar = "$" + convertDollar;
-                if (nominal.isEmpty()){
-                    text.setText("$0.0");
-                }
-                text.setText(dollar);
-                break;
+            case "in":
             case "km":
                 double currencyCambodianReal = 0.27;
                 double convertToCambodianReal = Integer.parseInt(nominal) * currencyCambodianReal;
@@ -277,13 +323,6 @@ public class Utility {
                     text.setText("៛0.0");
                 }
                 text.setText(cambodianReal);
-                break;
-            case "in":
-                if (nominal.isEmpty()){
-                    text.setText("Rp0,00");
-                }
-                String rupiah = "Rp" + nominal;
-                text.setText(rupiah);
                 break;
         }
     }
