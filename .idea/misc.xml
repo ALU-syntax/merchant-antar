@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/background_list_bank.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_chat.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/activity_device_list.xml" value="0.17828131680205217" />
         <entry key="app/src/main/res/layout/activity_editmitra.xml" value="0.1791363830696879" />
+        <entry key="app/src/main/res/layout/activity_list_bank.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/activity_ordervalidasi.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18" />
@@ -24,6 +26,7 @@
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.1791363830696879" />
         <entry key="app/src/main/res/layout/fragment_recycle.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_list_bank.xml" value="0.17828131680205217" />
         <entry key="app/src/main/res/layout/item_menu.xml" value="0.2935238952767192" />
         <entry key="app/src/main/res/layout/item_order.xml" value="0.25" />
         <entry key="app/src/main/res/layout/shimmerorder.xml" value="0.1791363830696879" />

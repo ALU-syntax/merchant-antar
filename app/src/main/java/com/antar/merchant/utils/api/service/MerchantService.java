@@ -23,6 +23,7 @@ import com.antar.merchant.json.ItemRequestJson;
 import com.antar.merchant.json.ItemResponseJson;
 import com.antar.merchant.json.KategoriRequestJson;
 import com.antar.merchant.json.KategoriResponseJson;
+import com.antar.merchant.json.ListBankActiveResponseJson;
 import com.antar.merchant.json.LoginRequestJson;
 import com.antar.merchant.json.LoginResponseJson;
 import com.antar.merchant.json.MobilePulsaHealthBPJSBaseResponse;
@@ -183,4 +184,6 @@ public interface MerchantService {
     @GET
     Call<TopUpStatusModel> checkAyoPesanStatusPayment(@Url String url, @Header("Authorization") String header);
 
+    @GET("pelanggan/getlistbank")
+    Call<ListBankActiveResponseJson> listBankActive();
 }
